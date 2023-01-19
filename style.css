@@ -1,0 +1,561 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/scape1.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+    display: flex;
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(#9199e0cb, #54587dcd);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+nav img{
+  width: 150px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #F3B314;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+/* LED title and mission statement */
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: left;
+  position: absolute;
+  top: 58%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* LED Electrical landing title */
+.text-box h1{
+  font-size: 62px;
+}
+
+/* mission statement and phone number */
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* estimation request */
+.hero-btn{
+  display: none;
+}
+nav .fa{
+  display: none;
+}
+
+/* estimation box */
+.sel-box{
+  background:#24252b54;
+  position: absolute;
+  top: 35%;
+  left: 62%;
+  color: #fff;
+  padding: 70px;
+  margin: 10px;
+}
+.sel-box h1{
+  font-size: 32px;
+  position: left;
+  position: center;
+  left: 32%;
+}
+.sel-box p{
+  color: #fff;
+}
+.est-btn{
+  display: inline-block;
+  position: left;
+  position: absolute;
+  left: 22%;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  top: 15px;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.est-btn:hover{
+  border: 1px solid #F3B314;
+  background: #F3B314;
+  transition: 1s;
+}
+
+/* mobile functionality */
+@media(max-width: 700px){
+  .text-box h1{
+    font-size: 60px;
+  }
+
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: #3E447B;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav-links ul{
+    padding: 30px;
+
+  }
+  .text-box{
+    position: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  } 
+  /* contact button */
+  .hero-btn{
+    display: inline-block;
+    position: left;
+    position: absolute;
+    border-radius: 30px;
+    
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover{
+    border: 1px solid #F3B314;
+    background: #F3B314;
+    transition: 1s;
+  }
+  .sel-box{
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* Services */
+.services-offered{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  .row{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 100px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  /* forgive me, father, for this code is a sin */
+  .row2{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-col2{
+    flex-basis: 27%;
+    left: center;
+    background: #c3c4cdba;
+    border-radius: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  .gen_img{
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .service-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  
+  .service-col2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+/* Brands */
+.brand{
+   width: 80%;
+   margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.brand-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: visible;
+}
+.brand-col img{
+    width: 100%;
+    display: absolute;
+}
+
+/* restyle brands */
+@media(max-width: 700px){
+  
+}
+
+/* about us */
+.about-us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin-bottom: 450px;
+  }
+
+.about-us h1{
+  margin-top: 5%;
+}
+  /* slideshow */
+  .mySlides{
+    width: 50%;
+    float: left;
+    padding-bottom: 2.5%;
+    border-radius: 7%;
+  }
+
+  .mySlides img{
+    
+  }
+  
+  .about-us p{
+    margin-top: 75px;
+    font-size: 17px;
+    font-weight: 400;
+    background: #5161f1cd;
+    float: right;
+    margin-right: 9%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2.5%;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .about-button{
+    display: inline-block;
+    position: left;
+    position: absolute;
+    left: 0%;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    top: 15px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 12px;
+  }
+  .about-button:hover{
+    border: 1px solid #F3B314;
+    background: #F3B314;
+    transition: 1s;
+  }
+
+  @media(max-width: 700px){
+    .about-us{
+      margin-bottom: 20px;
+    }
+    .mySlides{
+      display: none;
+    }
+    .about-us p{
+      margin-top: 10px;
+      padding-top: 6%;
+      padding-bottom: 6%;
+      float: none;
+      margin-right: 0%;
+    }
+  }
+
+
+/* testimonials */
+/*
+.testimonials{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonials-col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%; 
+}
+
+.testimonials-col p{
+  padding: 0;
+}
+
+.testimonials-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonials-col .fa{
+  color: #f44336;
+}
+
+@media(max-width: 700px){
+  .testimonials-col img{
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+*/
+
+@media(max-width: 700px){
+  .about-us h1{
+    margin-top: 10%;
+  }
+
+}
+/* Contact Us */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 110px 0;
+  }
+  
+  .cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .email-box{
+    width: 100%;
+    height: 100ev;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .email-funct{
+    background: #fff;
+    display:flex;
+    flex-direction:column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  .email-funct h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .email-funct input, textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+  }
+
+  .email-funct button{
+    padding: 15px;
+    background: #F3B314;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
+
+  .contact-details{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+
+  }
+  
+  .address-link{
+    color: rgb(227, 227, 227);
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+  
+  @media(max-width: 700px){
+    .cta{
+      margin-top: 20px;
+      padding: 90px 0;
+    }
+    .cta h1{
+      font-size: 24px;
+    }
+    .email-box{
+      position: center;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+    .email-funct{
+      width: 80%;
+    }
+  }
+  
+  /* footer */
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .icon .fa{
+    color: #000000;
+    padding: 0%;
+    margin: 1% 13px;
+    cursor: pointer;
+    padding: 4px 0;
+    text-decoration: none;
+  }
+  
+  .vet img{
+    width: 120px;
+  }
